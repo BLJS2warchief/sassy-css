@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="icon" href="background.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            Login to the official LIT website
+        </title>
+
+        <script>
+            function showPassword() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <div name = "tag" id = "tag" >
+            <br>#<br>F<br><br>E<br><br>E<br><br>L<br><br> <br>B<br><br>O<br><br>N<br><br>D<br><br>E<br><br>D<br>;;
+        </div>
+        <div name = "form" id = "form" style="overflow:visible"><br>
+            
+            <input type = "text" name = "userName" id = "userName" placeholder = "Username"> <br> <br>
+            
+            <input type = "password" name = "password" id = "password" placeholder = "Password"><br><br>
+            <div class = "passCheck" id = "passCheck" name = "passCheck" style="color: rgb(255, 255, 255); font: 1.2em sans-serif;";>
+                <input type="checkbox" name = "showPass" id = "showPass" onclick="showPassword()" style="opacity: 0.7; "> Show password
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type = "button" name = "logIn" value = "Log In"id = "logIn" onclick="logIn()">
+            </div>
+            
+        </div>
+    </body>
+</html>
